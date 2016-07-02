@@ -1,3 +1,4 @@
+//Importando lib para los componentes
 import { Component } from '@angular/core';
 
 @Component({

@@ -2,6 +2,11 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <!-- Librerias Bootstrap -->
+  <link rel="stylesheet" type="" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
   <title>Angular2Cli</title>
   <base href="/">
 
@@ -13,9 +18,6 @@
 </head>
 <body>
   <app-root>Loading...</app-root>
-
-  
-
     {{#each scripts.polyfills}}
     <script src="{{.}}"></script>
     {{/each}}
