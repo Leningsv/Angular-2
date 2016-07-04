@@ -1,0 +1,21 @@
+<div class="container">
+    <span class="label label-danger">Lista de Videos</span>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Code</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="#item of videos" (click)="onSelect(item)" >
+                <td>{{item.id}}</td>
+                <td>{{item.title}}</td>
+                <td>{{item.videoCode}}</td>
+                <td>{{item.des}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
