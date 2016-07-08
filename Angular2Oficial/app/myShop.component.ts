@@ -13,10 +13,17 @@ import {AppMyPeople} from './myPeople.component';
 })
 export class AppMyShop{
     nameIf= true;
+    public recentMovie= 'None';
+    public cart=[];
     public movieList=[
         'Batman vs Superman',
         'Civil War',
         'Harry Potter',
         'Wordl of Warcraft'
-    ]
+    ];
+    selectedMovie(i, item){
+        this.nameIf=false;
+        console.log('Movie was selected: '+i + ' - '+ item);
+        this.cart.push(item);
+    }
 }

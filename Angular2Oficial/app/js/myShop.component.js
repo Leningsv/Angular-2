@@ -15,6 +15,8 @@ var myPeople_component_1 = require('./myPeople.component');
 var AppMyShop = (function () {
     function AppMyShop() {
         this.nameIf = true;
+        this.recentMovie = 'None';
+        this.cart = [];
         this.movieList = [
             'Batman vs Superman',
             'Civil War',
@@ -22,6 +24,11 @@ var AppMyShop = (function () {
             'Wordl of Warcraft'
         ];
     }
+    AppMyShop.prototype.selectedMovie = function (i, item) {
+        this.nameIf = false;
+        console.log('Movie was selected: ' + i + ' - ' + item);
+        this.cart.push(item);
+    };
     AppMyShop = __decorate([
         core_1.Component({
             selector: 'app-myShop',

@@ -13,9 +13,16 @@
     </tbody>
 </table>
 <ul *ngFor="let item of movieList ; #i = index">
-    <li>{{i}} - {{item}}</li>
+    <li (click)="selectedMovie(i, item)" >{{i}} - {{item}}</li>
 </ul>
+<span class="label label-default">Cart</span>
+<br>
+<div class="input-group">
+    {{cart}}
+</div>
+<input type="text" name="" id="input1/(\w+)/\u\1/g" class="form-control" value="{{cart}}" [(ngModel)]="cart" required="required" pattern="" title="">
 
+<br>
 <table class="table table-condensed table-hover">
     <thead>
         <tr>
