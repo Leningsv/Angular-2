@@ -1,0 +1,31 @@
+<app-myMovies></app-myMovies>
+<span class="label label-danger">Directivas</span>
+<table class="table table-condensed table-hover">
+    <thead>
+        <tr>
+            <th *ngIf="nameIf">Hola </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Lenin</td>
+        </tr>
+    </tbody>
+</table>
+<ul *ngFor="let item of movieList ; #i = index">
+    <li>{{i}} - {{item}}</li>
+</ul>
+
+<table class="table table-condensed table-hover">
+    <thead>
+        <tr>
+            <th *ngIf="nameIf">Hola </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of movieList">
+            <td>{{item}}</td>
+        </tr>
+    </tbody>
+</table>
+<app-myPeople></app-myPeople>
