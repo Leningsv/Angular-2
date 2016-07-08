@@ -20,8 +20,9 @@
 <div class="input-group">
     {{cart}}
 </div>
-<input type="text" name="" id="input1/(\w+)/\u\1/g" class="form-control" value="{{cart}}" [(ngModel)]="cart" required="required" pattern="" title="">
-
+<span  *ngFor="let item of cart">
+    <button type="button" class="btn btn-default">{{item}}</button>
+</span>
 <br>
 <table class="table table-condensed table-hover">
     <thead>
