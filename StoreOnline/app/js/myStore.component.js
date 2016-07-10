@@ -28,7 +28,7 @@ var AppMyStore = (function () {
     AppMyStore = __decorate([
         core_1.Component({
             selector: 'app-myStore',
-            templateUrl: './app/templates/appMyStore.component.html',
+            template: '<router-outlet></router-outlet>',
             styleUrls: ['./app/bower_components/bootstrap/dist/css/bootstrap.css',
                 './app/styles/css/styles.css'],
             directives: [dashboard_component_1.Dashboard, person_component_1.Person, product_component_1.Product, login_component_1.Login,

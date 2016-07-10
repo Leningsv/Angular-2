@@ -9,7 +9,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
     selector: 'app-myStore',
-    templateUrl: './app/templates/appMyStore.component.html',
+    template : '<router-outlet></router-outlet>',
     styleUrls: ['./app/bower_components/bootstrap/dist/css/bootstrap.css',
     './app/styles/css/styles.css'],
     directives: [Dashboard,Person,Product,Login,

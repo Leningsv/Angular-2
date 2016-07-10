@@ -9,15 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var Login = (function () {
-    function Login() {
+    /**Implementacion navigate */
+    function Login(router) {
+        this.router = router;
         this.user = '';
         this.password = '';
     }
     Login.prototype.login = function (event) {
         if (this.user == 'admin' && this.password == 'admin') {
-            alert('Logeado');
-            console.log(event);
+            this.router.navigate(['/dashboard']);
         }
     };
     Login.prototype.ngOnInit = function () {
@@ -28,7 +30,7 @@ var Login = (function () {
             templateUrl: './app/templates/login.component.html',
             styleUrls: ['./app/styles/css/login.css']
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router])
     ], Login);
     return Login;
 }());
