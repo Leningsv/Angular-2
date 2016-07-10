@@ -9,6 +9,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+/**Importacion Routing */
+var router_1 = require('@angular/router');
 var Dashboard = (function () {
     function Dashboard() {
     }
@@ -17,7 +19,8 @@ var Dashboard = (function () {
     Dashboard = __decorate([
         core_1.Component({
             selector: 'app-dashboard',
-            templateUrl: './app/templates/dashboard.component.html'
+            templateUrl: './app/templates/dashboard.component.html',
+            directives: [router_1.ROUTER_DIRECTIVES],
         }), 
         __metadata('design:paramtypes', [])
     ], Dashboard);
