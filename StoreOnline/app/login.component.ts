@@ -8,18 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class Login implements OnInit {
     public user='';
     public password='';
-    
     login(event){
         if(this.user=='admin' && this.password =='admin'){
             alert('Logeado')
-            console.log(event);
-                  
+            console.log(event);      
         }       
     }
     constructor() {
     }
     ngOnInit() { 
-
     }
-
 }

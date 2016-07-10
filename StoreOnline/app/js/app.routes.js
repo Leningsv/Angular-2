@@ -5,7 +5,7 @@ var dashboard_component_1 = require('./dashboard.component');
 //import { HeroListComponent }    from './hero-list.component';
 exports.routes = [
     { path: '', component: login_component_1.Login },
-    { path: 'dashboard', component: dashboard_component_1.Dashboard }
+    { path: 'dashboard', component: dashboard_component_1.Dashboard },
 ];
 exports.APP_ROUTER_PROVIDERS = [
     router_1.provideRouter(exports.routes)
